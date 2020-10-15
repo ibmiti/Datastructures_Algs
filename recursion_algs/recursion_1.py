@@ -21,3 +21,26 @@ if user_factorial:
     print('computing....')
     print('bee-boop bee-boop')
     print(get_factorial(user_factorial))
+
+#
+# Recursion Pros & Cons
+#
+# within a recursive alg, there are no calculations done until the base case is reached
+# e.g :
+#     if factorial < 2:
+#             return 1
+#
+# So for very large problems ( think : millions of recursive calls ) it is very possible
+# to run out of memory since each call takes up O(1) space
+#
+# 1,000,000! = 1,000,000 * 999,999! ... and so on.
+# 
+# con : does not scale up like iteration, recursive alg require more memory to be spent
+#
+# con : in many languages the interative approach gets at the solution a bit quicker
+#
+# con : recursion is not as intuitive to understand
+#
+# pro : in some cases, recursion can be done with a few lines of code
+#
+# pro : extremely practical for tree traversals and binary search
