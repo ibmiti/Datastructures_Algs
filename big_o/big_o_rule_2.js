@@ -31,4 +31,33 @@ for (var i = 0; i < 100; i++){
 
   // so we can even here simplify this discription as ...
 
-  // O(n)
+  // O(n)  after we drop the constant of 1
+
+  //  Below will show what O(2n) looks like - which is 1 function with 2 for loops
+  // each for loop has the run time of O(n) so 2 loops would then be considered O(2n)
+
+  function bigO2N(items){
+    items.forEach(function(items){
+      console.log(item);
+    });
+    items.forEaach(function(items){
+      console.log(items);
+    });
+
+  }
+
+
+// after we drop the above constants it would stll evaluate to O(N) instead of O(2n)
+// we usually will not see numbers described in Big O - like constant ... though however we may see N squared ( n2 ) etc..
+
+// example of O(n + m) || O(a + b)
+
+function big_o_n_m(n,m){
+  n.forEach(function(n){
+    console.log(n);
+  }); // O(n)  ...
+
+  m.foreach(function(n){
+    console.log(n);
+  }); // O(m) ...
+} // O(n + m)
