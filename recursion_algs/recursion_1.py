@@ -9,14 +9,15 @@
 # number = 5
 
 user_response = input("which factorial would you like to compute? : ")
+user_factorial = int(user_response)
 def get_factorial(factorial):
     if factorial < 2:
         return 1
     return factorial * get_factorial(factorial - 1)
 
-if user_response:
-    print('this is your number you are factorializing ' ' : ' + user_response)
+if user_factorial:
+    print('this is your number you are factorializing ' ' : ')
+    print(user_factorial)
     print('computing....')
     print('bee-boop bee-boop')
-    user_factorial = int(user_response)
     print(get_factorial(user_factorial))
