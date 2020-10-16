@@ -15,12 +15,15 @@ def get_factorial(factorial):
         return 1
     return factorial * get_factorial(factorial - 1)
 
-if user_factorial:
-    print('this is your number you are factorializing ' ' : ')
+# upper bound
+if user_factorial < 999:
+    print('this is your number you are factorializing : ')
     print(user_factorial)
     print('computing....')
     print('bee-boop bee-boop')
     print(get_factorial(user_factorial))
+else :
+    print("i don't know if we should even try a num that high buddy")
 
 #
 # Recursion Pros & Cons
@@ -34,7 +37,7 @@ if user_factorial:
 # to run out of memory since each call takes up O(1) space
 #
 # 1,000,000! = 1,000,000 * 999,999! ... and so on.
-# 
+#
 # con : does not scale up like iteration, recursive alg require more memory to be spent
 #
 # con : in many languages the interative approach gets at the solution a bit quicker
