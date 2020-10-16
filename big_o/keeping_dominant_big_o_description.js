@@ -1,7 +1,7 @@
 // example of ignoring the less dominant operation wthin big O eval
 
 // O(n)
-numbers = [1,2,3,4,5]
+numbers = [1,2,3,4,5];
 function big_o_n(numbers){
   console.log('o(n)')
   numbers.forEach(function(number){
