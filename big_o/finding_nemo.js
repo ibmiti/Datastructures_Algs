@@ -34,6 +34,25 @@ findNemo(everyone);
   //
   //       why is this worse case ?
   //
-  //         because the algorithm will have to take more steps to get to the element it is looking for 
+  //         because the algorithm will have to take more steps to get to the element it is looking for
   //
   //
+
+
+  // rewriting above function with foreach
+
+  const findNemo2 = array => {
+    array.forEarch(fish => {
+      if (fish === 'nemo'){
+        console.log('Found nemo');
+      }
+    });
+  }
+
+  const findNemo3 = array => {
+    for (let fish of array){
+      if (fish === 'nemo'){
+        console.log('Found nemo!');
+      }
+    }
+  }
